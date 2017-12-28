@@ -58,6 +58,8 @@ Like this:
 
 ![alt text][freeze tag gif]
 
+Except usually without soccer balls. But that sounds cool! Hit me up if you wanna play that way.
+
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
 [configuration section of the freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#configuration
