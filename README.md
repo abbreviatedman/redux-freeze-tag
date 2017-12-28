@@ -1,6 +1,12 @@
 # redux-freeze-tag
 
-A tiny, tiny library that adds customizable immutability to redux. It does this by using <link>freeze-tag</link> to enhance the reducer(s) you use to create your redux store. The great part is that you can use it once when you create the store, and not have to change any of the rest of your code in any way to gain immutability.
+A tiny, tiny library that adds customizable immutability to [Redux][Redux]. It does this by using [freeze-tag][freeze-tag] to enhance the reducer(s) you use to create your Redux store.
+
+### Features
+
+* **Simple API** - One line of code in your Redux store setup. Then use your objects normally!
+* **Customizable** - A simple options parameter allows you to set rules for mutations.
+* **Fast** - Places mutation handler on your objects, which is way faster than `Object.freeze`-ing them.
 
 ### Usage
 
@@ -21,7 +27,7 @@ redux-freeze-tag will return an enhanced reducer that immutablizes state. No mor
 
 It's recommended not to use this during production, as it will slow state changes down some.
 
-You can customize the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the <link>freeze-tag README</link> for more info on customizations available.)
+You can customize the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [freeze-tag README][freeze-tag README] for more info on customizations available.)
 
 ```javascript
 const options = {delete: true};
@@ -44,3 +50,7 @@ const rootReducer = combineReducers({
 And, of course, you can pass in an options object to any of those `reduxFreeze` calls as well.
 
 Enjoy!
+
+[Redux]: https://redux.js.org/
+[freeze-tag]: https://github.com/abbreviatedman/freeze-tag
+[freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#freeze-tag
