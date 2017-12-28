@@ -58,7 +58,7 @@ Like this:
 
 ![alt text][freeze tag gif]
 
-Except usually without soccer balls. But that sounds cool! Hit me up if you wanna play that way.
+Except usually without soccer balls. But that sounds cool! Hit me up if you wanna play.
 
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
