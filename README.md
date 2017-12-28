@@ -26,7 +26,9 @@ import {createStore} from 'redux';
 const store = createStore(reduxFreeze(reducer));
 ```
 
-redux-freeze-tag will return an enhanced reducer that immutablizes state. No more accidental reducer mutations!
+`reduxFreeze` will return an enhanced reducer that immutablizes state, which you use to create your store and never worry about again. No more accidental reducer mutations or crazy immutability APIs!
+
+### Configuration
 
 You can configure the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [configuration section of the freeze-tag README][configuration section of the freeze-tag README] for more info on this feature.)
 
@@ -35,7 +37,7 @@ const options = {delete: true};
 const store = createStore(reduxFreeze(reducer, options));
 ```
 
-You can even use it on specific reducers only, if you wish.
+You can even configure which reducers to use `redux-freeze-tag` on.
 
 ```javascript
 import {combineReducers} from 'redux';
@@ -49,8 +51,6 @@ const rootReducer = combineReducers({
 ```
 
 And, of course, you can pass in an options object to any of those `reduxFreeze` calls as well.
-
-Enjoy!
 
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
