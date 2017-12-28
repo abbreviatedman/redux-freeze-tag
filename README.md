@@ -27,7 +27,7 @@ redux-freeze-tag will return an enhanced reducer that immutablizes state. No mor
 
 It's recommended not to use this during production, as it will slow state changes down some.
 
-You can customize the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [freeze-tag README][freeze-tag README] for more info on customizations available.)
+You can customize the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [customization section of the freeze-tag README][customization section of the freeze-tag README] for more info on customizations available.)
 
 ```javascript
 const options = {delete: true};
@@ -53,4 +53,4 @@ Enjoy!
 
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
-[freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#freeze-tag
+[customization section of the freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#customization
