@@ -52,6 +52,9 @@ const rootReducer = combineReducers({
 
 And, of course, you can pass in an options object to any of those `reduxFreeze` calls as well.
 
+![alt text][freeze tag gif]
+
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
 [configuration section of the freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#configuration
+[freeze tag gif]: http://www.footy4kids.co.uk/wp-content/uploads/2015/09/freeze.gif "how to play freeze tag?"
