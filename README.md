@@ -2,11 +2,14 @@
 
 A tiny, tiny library that adds customizable immutability to [Redux][Redux]. It does this by using [freeze-tag][freeze-tag] to enhance the reducer(s) you use to create your Redux store.
 
+**It's recommended you delete redux-freeze-tag in any production build.**. It will slow state changes down some, especially if you configure the method to handle mutations other than `set`. But it's plenty fast enough for development!
+
+
 ### Features
 
 * **Simple API** - One line of code in your Redux store setup. Then use your objects normally!
-* **Customizable** - A simple options parameter allows you to set rules for mutations.
-* **Fast** - Places mutation handler on your objects, which is way faster than `Object.freeze`-ing them.
+* **Configurable** - A simple options parameter allows you to set rules for mutations.
+* **Fast** - Places mutation handler on your objects, which is way faster than the recursive`Object.freeze`-ing solution you normally see.
 
 ### Usage
 
@@ -25,9 +28,7 @@ const store = createStore(reduxFreeze(reducer));
 
 redux-freeze-tag will return an enhanced reducer that immutablizes state. No more accidental reducer mutations!
 
-It's recommended not to use this during production, as it will slow state changes down some.
-
-You can customize the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [customization section of the freeze-tag README][customization section of the freeze-tag README] for more info on customizations available.)
+You can configure the internal freeze-tag behavior by passing in an options object as a second argument. It's the same options object that regular freeze-tag uses. (See the [configuration section of the freeze-tag README][configuration section of the freeze-tag README] for more info on this feature.)
 
 ```javascript
 const options = {delete: true};
@@ -53,4 +54,4 @@ Enjoy!
 
 [Redux]: https://redux.js.org/
 [freeze-tag]: https://github.com/abbreviatedman/freeze-tag
-[customization section of the freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#customization
+[configuration section of the freeze-tag README]: https://github.com/abbreviatedman/freeze-tag#configuration
