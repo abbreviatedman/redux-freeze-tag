@@ -1,0 +1,30 @@
+{
+  "name": "redux-freeze-tag",
+  "version": "1.0.0",
+  "description": "A tiny, tiny library that adds customizable immutability to redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbreviatedman/redux-freeze-tag.git"
+  },
+  "keywords": [
+    "redux",
+    "immutability",
+    "reducer",
+    "proxy",
+    "recursive",
+    "state"
+  ],
+  "author": "Colin Jaffe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbreviatedman/redux-freeze-tag/issues"
+  },
+  "homepage": "https://github.com/abbreviatedman/redux-freeze-tag#readme",
+  "dependencies": {
+    "freeze-tag": "*"
+  }
+}
