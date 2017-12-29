@@ -7,9 +7,11 @@ A tiny, tiny library that adds customizable immutability to [Redux][Redux]. It d
 
 ### Features
 
+* **Recursive** - Begins at your state object and goes all the way down. No data structure left behind.
+* **Fast** - Places a mutation handler on objects, which is way faster than the recursive`Object.freeze`-ing solution you normally see.
 * **Simple API** - One line of code in your Redux store setup. Then use your objects normally!
 * **Configurable** - A simple options parameter allows you to set rules for mutations.
-* **Fast** - Places mutation handler on your objects, which is way faster than the recursive`Object.freeze`-ing solution you normally see.
+
 
 ### Usage
 
