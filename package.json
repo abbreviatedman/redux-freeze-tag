@@ -1,6 +1,6 @@
 {
   "name": "redux-freeze-tag",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A tiny, tiny library that adds customizable immutability to redux.",
   "main": "index.js",
   "scripts": {
